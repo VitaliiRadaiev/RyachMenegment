@@ -1,0 +1,25 @@
+<section class="hero" data-padding-top-header-size>
+    <div class="hero__bg ibg">
+        <img src="@@url" alt="">
+    </div>
+    <div class="hero__body container">
+        @@if (isSuptitle === true) {
+            <div class="hero__suptitle">@@suptitle</div>
+        }
+        
+        <h1 class="hero__title">@@title</h1>
+
+        @@if (text === true) {
+            <div class="hero__text text-content">
+                <p>
+                    RYacht Service main office is located in Monaco and in Cote d’Azur with our team specialized in supporting superyachts, including services such as Yacht agency, Management, Brokerage and Tax-free bunkering worldwide.
+                </p>
+                <p>
+                    Our international network combined with local knowledge and experience provide all ingredients to serve the needs of Owners and Captains on superyachts. The company objective is to offer high level service with transparent pricing.
+                </p>
+            </div>
+
+            <a href="#" class="btn btn--with-arrow">Contact us</a>
+        }
+    </div>
+</section>

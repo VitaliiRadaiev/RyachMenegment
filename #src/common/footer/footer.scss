@@ -1,0 +1,118 @@
+.footer {
+    padding: 1.6rem 0 2.5rem;
+
+    @media (max-width: $md3+px) {
+        padding-top: 32px; 
+    }
+
+    &__logo {
+        margin: 0 auto 2.4rem;
+        width: 100%;
+        max-width: 19.6rem;
+        color: $textColorSecondary;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 56px;
+        }
+
+        & img, & svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__nav {
+        margin-bottom: 3.2rem;
+
+        @media (max-width: $md3+px) {
+            display: none;
+        }
+    }
+
+    &__address {
+    }
+
+    &__social {
+        color: #000;
+        margin-bottom: 2.4rem;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 40px;
+        }
+
+        & .social {
+            justify-content: center;
+        }
+    }
+
+    &__bottom {
+        text-align: center;
+        border-top: 1px solid #737373;
+        padding-top: 1.6rem;
+        font-size: 1.4rem;
+        line-height: 2.14em;
+        letter-spacing: 0.014em;
+    }
+}
+
+.nav-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__link {
+        font-size: 1.4rem;
+        line-height: 1.14em;
+        letter-spacing: 0.014em;
+        color: $textColorSecondary;
+        transition: all 0.3s ease;
+
+        @media (min-width: 992px) {
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        &:not(:last-child) {
+            margin-right: 4rem;
+        }
+    }
+}
+
+.address-footer {
+    
+    @media (min-width: 768px) {
+        display: flex;
+    }
+
+    &__item {
+        flex: 0 1 calc(100% / 3);
+        padding: 0 1rem;
+        margin-bottom: 3.2rem;
+        text-align: center;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        color: #000;
+        line-height: 1.25em;
+        font-weight: bold;
+        margin-bottom: 0.8rem;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        line-height: 1.14em;
+        letter-spacing: 0.014em;
+
+        & p {
+            margin-bottom: 0.8rem;
+            & > *:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

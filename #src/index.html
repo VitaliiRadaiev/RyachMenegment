@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body style="background-image: url(img/photo/home-bg.jpg);">
+	<div class="_preload-body"></div>
+	<!-- == TOP LINE ================== -->
+	@@include('common/header/_header.html',{})
+	<!-- == // TOP LINE ================== -->
+
+
+	<main class="_page home-page">
+		@@include('common/hero/_hero.html',{
+		"url": "img/photo/hero-bg-1.jpg",
+		"isSuptitle": false,
+		"suptitle": "",
+		"title": "We are where you want us to be",
+		"text": true
+		})
+
+		<section class="about-section padding-wrap">
+			<div class="container">
+				<div class="about-section__body">
+					<div class="about-section__col-1">
+						<div class="about-section__img ibg">
+							<img src="img/photo/about-section-img.jpg" alt="">
+						</div>
+					</div>
+					<div class="about-section__col-2">
+						<h2 class="about-section__title">Learn more about RYacht Management</h2>
+						<div class="about-section__text text-content">
+							<p>
+								RYacht Service main office is located in Monaco and in Cannes with our team specialized
+								in supporting superyachts, with services such as Yacht agency, Management, Brokerage and
+								Tax-free bunkering worldwide.
+							</p>
+						</div>
+						<div class="about-section__history history">
+							<div class="history__item">
+								<div class="history__year">2011</div>
+								<div class="history__circle"></div>
+								<div class="history__text">
+									Established in Cannes
+								</div>
+							</div>
+							<div class="history__item">
+								<div class="history__year">2017</div>
+								<div class="history__circle"></div>
+								<div class="history__text">
+									Genoa office
+									opened
+								</div>
+							</div>
+							<div class="history__item">
+								<div class="history__year">2021</div>
+								<div class="history__circle"></div>
+								<div class="history__text">
+									Monaco office
+									opened
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services padding-wrap bg-secondary">
+			<div class="container-sm">
+				<h2 class="services__title text-center">
+					Best services for you.
+					Just one call away
+				</h2>
+				<ul class="services__list">
+					<li>
+						<div class="services__list-title">Yacht Agent & Crew</div>
+						<div class="services__list-text text-content">
+							Our yacht concierge and yacht agency department providing yacht assistance in France, Italy and in Albania
+						</div>
+						<a href="#" class="link"><span>Learn more</span></a>
+					</li>
+					<li>
+						<div class="services__list-title">Management</div>
+						<div class="services__list-text text-content">
+							Taylor made with expert in-house knowledge and skills to help each owner to get the best out of their yacht. 
+						</div>
+						<a href="#" class="link"><span>Learn more</span></a>
+					</li>
+					<li>
+						<div class="services__list-title">Sales</div>
+						<div class="services__list-text text-content">
+							Our  solid experience gained over years will offer a solution to any of the broker, captain and owner needs.
+						</div>
+						<a href="#" class="link"><span>Learn more</span></a>
+					</li>
+					<li>
+						<div class="services__list-title">Fuel</div>
+						<div class="services__list-text text-content">
+							Our yacht concierge and yacht agency department providing yacht assistance in France, Italy and in Albania
+						</div>
+						<a href="#" class="link"><span>Learn more</span></a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<video class="video" src="img/HIMO Z20-1080P_CUT.mp4" playsinline loop muted autoplay></video>
+
+		@@include('common/cta/_cta.html', {
+			"title": "We are looking forward to the opportunity to connect with you and meet all your future requirements."
+		})
+
+	</main>
+
+
+	<!-- == FOOTER ================== -->
+	@@include('common/footer/_footer.html',{})
+	<!-- == // FOOTER ================== -->
+
+	@@include('_js-bottom.html',{})
+</body>
+
+</html>

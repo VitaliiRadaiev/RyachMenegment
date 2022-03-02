@@ -1,0 +1,13 @@
+.social {
+    display: flex;
+    align-items: center;
+    color: inherit;
+    font-size: 2rem;
+    margin-bottom: 0;
+    padding-left: 0;
+    & > li {
+        &:not(:last-child) {
+            margin-right: 0.6em;
+        }
+    }
+}

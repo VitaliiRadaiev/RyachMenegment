@@ -1,0 +1,46 @@
+
+
+//<ШРИФТЫ>===========================================================================================================
+$mainFontFamily:  'AvenirNextCyr', sans-serif;
+$fontAwesome: "Font Awesome 5 Free";
+//</ШРИФТЫ>===========================================================================================================
+
+//<РАЗМЕРЫ КОНТЕЙНЕРА>===========================================================================================================
+$minwidth: 320px;
+$mw: 1170;
+$md1: 1267.98;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+//</РАЗМЕРЫ КОНТЕЙНЕРА>===========================================================================================================
+
+$textColor: #525252; 
+$textColorSecondary: #161414;
+$mainColor: #121A5B;
+$secondColor: #FAFAFA;
+$dangerColor:  #FF4444;
+$successColor:#00C367;
+$infoColor: #BC62EF;
+$lightColor: #F6F6F6;
+$warningColor: #FFC31C;
+
+
+:root {
+    --bs-primary: #121A5B;
+    --bs-secondary: #FAFAFA;
+    --bs-success: #00C367;
+    --bs-info: #BC62EF;
+    --bs-warning: #FFC31C;
+    --bs-danger: #FF4444;
+    --bs-light: #F6F6F6;
+    --bs-dark: #000;
+
+    --bs-primary-rgb: 18, 26, 91;
+    --bs-secondary-rgb: 250, 250, 250;
+    --bs-success-rgb: 0, 195, 103;
+    --bs-info-rgb: 188, 98, 239;
+    --bs-warning-rgb: 255, 195, 28;
+    --bs-danger-rgb: 255, 68, 68;
+    --bs-light-rgb: 246, 246, 246;
+    --bs-dark-rgb: 0, 0, 0;
+}
