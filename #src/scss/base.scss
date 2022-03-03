@@ -344,6 +344,18 @@ video {
 	}
 }
 
+.swiper-pagination {
+	bottom: 0 !important;
+
+	& .swiper-pagination-bullet {
+		margin: 0 2px !important;
+	}
+
+	& .swiper-pagination-bullet-active {
+		background-color: #000;
+	}
+}
+
 .text-primary {
 	color: $mainColor !important;
 }

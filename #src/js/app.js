@@ -46,6 +46,7 @@ class App {
 
 	slidersInit() {
 		@@include('../common/gallery/gallery.js');
+		@@include('../common/partners/partners.js');
 	}
 
 	smoothScroll() {

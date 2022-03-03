@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>New Project</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		body.page-is-load ._preload-body {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		body.page-is-load ._preload-body:before {
+			display: none;
+		}
+
+		._preload-body {
+			background-color: #fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			transition: all .6s ease .2s;
+		}
+
+		._preload-body:before {
+			position: absolute;
+			content: '';
+			z-index: 999;
+			top: 50%;
+			left: 50%;
+			height: 50px;
+			width: 50px;
+			border-radius: 50%;
+			border: 4px solid #6e6e6e;
+			border-right: 4px solid #fff;
+			transform: translate(-50%, -50%);
+			animation: preloadBody 2s linear infinite;
+		}
+
+		@keyframes preloadBody {
+			from {
+				transform: translate(-50%, -50%) rotate(0);
+			}
+
+			to {
+				transform: translate(-50%, -50%) rotate(360deg);
+			}
+		}
+	</style>
+	
+<script src="js/vendors.js"></script>
+<script src="js/app.js"></script>
+<!-- <script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
+defer
+></script> -->
+</head>
+
+<body style="background-image: url(img/photo/home-bg.jpg);">
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    <header class="header" data-header>
+    <div class="header__body container">
+        <div class="header__logo">
+            <a href="#">
+                <img class="img-svg" src="img/logo/logo.svg" alt="logo">
+            </a>
+        </div>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li>
+                    <a href="#" class="menu__link not-hover current-menu-item">Yacht Agent & Crew</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__link not-hover">Management</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__link not-hover">Sales</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__link not-hover">Fuel</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__link not-hover">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__social">
+            <ul class="social">
+    <li>
+        <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </li>
+</ul>
+        </div>
+        <div class="header__burger" data-action="open-mobile-menu">
+            <img class="img-svg" src="img/icons/burger.svg" alt="">
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu" data-mobile-menu>
+    <div class="mobile-menu__close" data-action="close-mobile-menu">
+        <img class="img-svg" src="img/icons/close.svg" alt="">
+    </div>
+    <div class="mobile-menu__scroll-wrap">
+        <ul class="mobile-menu__list">
+            <li>
+                <a href="" class="mobile-menu__link">
+                    Yacht Agent & Crew 
+                </a>
+            </li>
+            <li>
+                <a href="" class="mobile-menu__link">
+                    management
+                </a>
+            </li>
+            <li>
+                <a href="" class="mobile-menu__link">
+                    sales
+                </a>
+            </li>
+            <li>
+                <a href="" class="mobile-menu__link">
+                    fuel
+                </a>
+            </li>
+            <li>
+                <a href="" class="mobile-menu__link">
+                    contact
+                </a>
+            </li>
+        </ul>
+        <div class="mobile-menu__social">
+            <ul class="social">
+    <li>
+        <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </li>
+</ul>
+        </div>
+    </div>
+</div>
+    <!-- == // TOP LINE ================== -->
+
+
+    <main class="_page ">
+        <section class="hero" data-padding-top-header-size>
+    <div class="hero__bg ibg">
+        <img src="img/photo/hero-bg-3.jpg" alt="">
+    </div>
+    <div class="hero__body container">
+        
+            <div class="hero__suptitle">YMANAGEMENT</div>
+        
+        
+        <h1 class="hero__title">In all instances, we put safety first</h1>
+
+        
+    </div>
+</section>
+
+
+        <section class="text-block padding-wrap">
+    <div class="container-sm">
+        <h2 class="text-block__title">Management</h2>
+        <div class="text-block__text text-content">
+            RYacht Management packages are provided taylor made with expert in-house knowledge and skills to help each owner to get the best out of their yacht. From bespoke services to complete support, there is a solution to suit your needs and your budget.
+        </div>
+
+        <div class="text-block__btn" data-action="scroll-to-next-block">
+            Learn more
+        </div>
+    </div>
+</section>
+
+        <section class="info">
+            <div class="container-sm">
+                <div class="info__row">
+                    <div class="info-item">
+                        <div class="info-item__col-1">
+                            <div class="info-item__img ibg">
+                                <img src="img/photo/info-img-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="info-item__col-2">
+                            <h2 class="info-item__title">Financial Management</h2>
+                            <div class="info-item__text text-content">
+                                <ul>
+                                    <li>
+                                        Crew Employment and Payroll service
+                                    </li>
+                                    <li>
+                                        Seafarer Employment Agreements and amendments
+                                    </li>
+                                    <li>
+                                        Payroll administration incl., salary, bonus, tax, social security.
+                                    </li>
+                                    <li>
+                                        Annual Operational Budget
+                                    </li>
+                                    <li>
+                                        Access to Expense Accounting System for all agreed users
+                                    </li>
+                                    <li>
+                                        Invoice & Suppliers Payment service
+                                    </li>
+                                    <li>
+                                        Review and approval of purchase requests/orders
+                                    </li>
+                                    <li>
+                                        Monthly committed spend forecasting and fund requests
+                                    </li>
+                                    <li>
+                                        Dedicated Managed Bank Accounts – Euro or Dollar
+                                    </li>
+                                    <li>
+                                        Dedicated pre-loaded expense Payment Cards
+                                    </li>
+                                    <li>
+                                        Reconciliation of Yacht Management Accounts with Charter proceeds & APA
+                                    </li>
+                                    <li>
+                                        Monthly & Annual Financial Reports
+                                    </li>
+                                    <li>
+                                        Liaise With Owners & Crew Provider to ensure adequate funding for Payroll
+                                    </li>
+                                    <li>
+                                        Assist with VAT processing
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__row">
+                    <div class="info-item">
+                        <div class="info-item__col-1">
+                            <div class="info-item__img ibg">
+                                <img src="img/photo/info-img-2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="info-item__col-2">
+                            <h2 class="info-item__title">Technical Management</h2>
+                            <div class="info-item__text text-content">
+                                <ul>
+                                    <li>
+                                        Provision of competent personnel to supervise the maintenance and general efficiency of the yacht and provide general advice and support; the Manager shall report to the Owner on the status of maintenance (if any) and the general efficiency on the yacht on a monthly basis; 
+                                    </li>
+                                    <li>    
+                                        Assist with establishing a suitable planned maintenance and inventory system onboard;
+                                    </li>
+                                    <li>    
+                                        Review maintenance reports and provide feedback for improvement;
+                                    </li>
+                                    <li>
+                                        Coordinate the creation of a long term maintenance plan of major works;
+                                    </li>
+                                    <li>
+                                        Coordinate with shipyard ongoing maintenance activities;
+                                    </li>
+                                    <li>
+                                        Compile a list of ongoing defects for the Yacht  - (Notes shared list);
+                                    </li>
+                                    <li>    
+                                        Analyse any major defects to prevent recurrence;
+                                    </li>
+                                    <li>
+                                        Provide support in the event of technical difficulties;
+                                    </li>
+                                    <li>
+                                        Provide general technical and commercial advice and guidance;
+                                    </li>
+                                    <li>
+                                        Assist with sourcing engineering spares, supplies or service as required;
+                                    </li>
+                                    <li>
+                                        Provide Technical assistance with insurance Claims;
+                                    </li>
+                                    <li>    
+                                        Administer a Fluid Sampling and analysis program;
+                                    </li>
+                                    <li>
+                                        Coordinate crew structure, duties and responsibilities;
+                                    </li>
+                                    <li>
+                                        Inspect the yacht at least twice per season (minimum four times per year) providing a Technical report on completion;
+                                    </li>
+                                    <li>
+                                        Assist with Flag and Classification surveys, preparation and support
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__row">
+                    <div class="info-item">
+                        <div class="info-item__col-1">
+                            <div class="info-item__img ibg">
+                                <img src="img/photo/info-img-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="info-item__col-2">
+                            <h2 class="info-item__title">Safety Management Services</h2>
+                            <div class="info-item__text text-content">
+                                <ul>
+                                    <li>
+                                        Yacht Specific Standard Operating Procedures are established and followed
+                                    </li>
+                                    <li>
+                                        Safe Systems of Work are established and followed
+                                    </li>
+                                    <li>
+                                        Yacht is maintained to the required safe standards
+                                    </li>
+                                    <li>
+                                        Annual Internal audits of SMS
+                                    </li>
+                                    <li>
+                                        Security Alert Program, Periodic Testing & Emergency Response 
+                                    </li>
+                                    <li>
+                                        Verify Accuracy of all applicable Certificates and Documents 
+                                    </li>
+                                    <li>
+                                        Online / Offline Safety Management System
+                                    </li>
+                                    <li>
+                                        Designated Person Ashore (DPA)
+                                    </li>
+                                    <li>
+                                        Emergency Drill Schedule is established and regularly undertaken 
+                                    </li>
+                                    <li>
+                                        Flag State Statutory requirements are met 
+                                    </li>
+                                    <li>
+                                        Classification Society requirements are met
+                                    </li>
+                                    <li>
+                                        All reported Safety Issues are followed up
+                                    </li>
+                                    <li>
+                                        Monitor Certificates and Documents due dates and expiry dates
+                                    </li>   
+                                    <li>
+                                        Assist with preparations for External audits and Surveys
+                                    </li>
+                                    <li>
+                                        Ensure External Surveys and Audits are conducted 
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__row">
+                    <div class="info-item">
+                        <div class="info-item__col-1">
+                            <div class="info-item__img ibg">
+                                <img src="img/photo/info-img-4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="info-item__col-2">
+                            <h2 class="info-item__title">Yacht Refit Management</h2>
+                            <div class="info-item__text text-content">
+                                <p>
+                                    Refitting a yacht can be a daunting and stressful experience, which is why successful refits are overseen by a knowledgeable and qualified project manager.
+                                    RYacht Management has the skills, expertise and experience to act as this link between the shipyard and the client, ensuring the efficient and smooth refit of your yacht.
+                                    Serving as this knowledgeable and professional liaison, our Project Managers will propose suitable refit yards, suppliers, designers, contractors and specialists and work with these third parties to ensure a successful outcome of the refit project.
+                                </p>
+                                <p class="mb-0">Services available include:</p>
+                                <ul>
+                                    <li>
+                                        Pre-planning and scope of work
+                                    </li>
+                                    <li>
+                                        Selection of suitable shipyards
+                                    </li>
+                                    <li>
+                                        Obtaining quotes, costs and financial control
+                                    </li>
+                                    <li>
+                                        Technical advice
+                                    </li>
+                                    <li>
+                                        Purchasing and assistance with contractors
+                                    </li>
+                                    <li>
+                                        Full-attendance project management
+                                    </li>
+                                    <li>
+                                        Class and Flag State involvement in repairs and modifications
+                                    </li>
+                                </ul>
+                                <p>
+                                    For more information on how Ryacht Management can assist you with your yacht refit, please contact us.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners padding-wrap">
+    <div class="container-sm">
+        <h2 class="partners__title text-center">
+            Project Management and Yacht refit Portfolio
+        </h2>
+        <div class="partners__list swiper" data-slider="partners-mob-slider" data-mobile="false">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/photo/partners-logo-1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/photo/partners-logo-2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/photo/partners-logo-3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/photo/partners-logo-4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/photo/partners-logo-5.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/photo/partners-logo-6.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/photo/partners-logo-7.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/photo/partners-logo-8.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/photo/partners-logo-9.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/photo/partners-logo-10.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/photo/partners-logo-11.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/photo/partners-logo-12.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+
+        <section class="cta padding-wrap bg-secondary">
+    <div class="container-sm">
+        <h2 class="cta__title text-center">We are looking forward to the opportunity to connect with you and meet all your future requirements.</h2>
+        <a href="#" class="btn btn--with-arrow btn--secondary">Contact us</a>
+    </div>
+</section>
+
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    <footer class="footer">
+    <div class="container-sm">
+        <div class="footer__logo">
+            <a href="#">
+                <img class="img-svg" src="img/logo/logo.svg" alt="">
+            </a>
+        </div>
+        <nav class="footer__nav nav-footer">
+            <a href="#" class="nav-footer__link"> Agency & Recruitement</a>
+            <a href="#" class="nav-footer__link">Management</a>
+            <a href="#" class="nav-footer__link">Sales</a>
+            <a href="#" class="nav-footer__link">Fuel</a>
+            <a href="#" class="nav-footer__link">Contact</a>
+        </nav>
+        <div class="footer__address address-footer">
+            <div class="address-footer__item">
+                <div class="address-footer__title">Monaco</div>
+                <div class="address-footer__text">
+                    <p>
+                        25 Boulevard du Larvotto</p>
+                    <p>98000 Monaco</p>
+                </div>
+            </div>
+            <div class="address-footer__item">
+                <div class="address-footer__title">Cannes</div>
+                <div class="address-footer__text">
+                    <p>
+                        351 chemin de l’Affama, nr 21
+                    </p>
+                    <p>
+                        83440 Montauroux
+                    </p>
+                </div>
+            </div>
+            <div class="address-footer__item">
+                <div class="address-footer__title">Genoa</div>
+                <div class="address-footer__text">
+                    <p>
+                        Via Enrico Toti 4/8
+                    </p>
+                    <p>
+                        16139 Genova
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__social">
+            <ul class="social">
+    <li>
+        <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </li>
+</ul>
+        </div>
+        <div class="footer__bottom">
+            © 2022 RYacht Management, All rights reserved. Made with ❤️ by Regardé Agency.
+        </div>
+    </div>
+</footer>
+    <!-- == // FOOTER ================== -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/jQueryScripts.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
+</body>
+
+</html>
