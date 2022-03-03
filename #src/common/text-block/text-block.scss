@@ -1,39 +1,104 @@
 .text-block {
-    &--bottom-space {
-        margin-bottom: 5rem;
-    }
-    &__title {
+    text-align: center;
+
+    &--with-img {
+        text-align: left;
+
+        & .text-block__title {
+            max-width: none;
+        }
+
+        & .text-block__text {
+            max-width: none;
+        }
     }
 
-    &__text {
+    &__body {
+        
+        @media (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &__col-1 {
+        flex: 0 0 36.56%;
+    }
+
+    &__col-2 {
+        flex: 1 1 auto;
+        padding-left: 10.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @media (max-width: $md2+px) {
+            padding-left: 4rem;
+        }
+
+        @media (max-width: $md3+px) {
+            padding-left: 0;
+            display: block;
+        }
+
         & > *:last-child {
             margin-bottom: 0;
         }
-        &--secondary {
-            padding: 0 9.7rem;
+    }
 
-            @media (max-width: $md2+px) {
-                padding: 0 50px;
-            }
-            @media (max-width: $md3+px) {
-                padding: 0;
-            }
+    &__img {
+        min-height: 58.4rem;
 
-            &.text-content {
-                line-height: 1.59em;
-                letter-spacing: 0.05em;
-            }
+        @media (max-width: $md3+px) {
+            min-height: 438px;
+            margin-bottom: 56px;
         }
     }
 
-    &__media-wrap {
-        width: 100%;
+    &__title {
         margin-bottom: 4rem;
 
-        @media (min-width: 768px) {
-            max-width: 56rem;
-            float: right;
-            margin-left: 6rem;
+        @media (max-width: $md3+px) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__text {
+        margin: 0 auto 8rem;
+        max-width: 62.6rem;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 24px;
+        }
+
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__btn {
+        font-size: 1.4rem;
+        line-height: 1.14em;
+        letter-spacing: 0.014em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $textColorSecondary;
+        cursor: pointer;
+
+        &:after {
+            font-family: $fontAwesome;
+            font-weight: 700;
+            content: '\f063';
+            font-size: 1.4em;
+            margin-top: 0.6em;
+            transition: all .3s ease;
+            animation: textBtnAnim 2s ease infinite;
+        }
+
+        @keyframes textBtnAnim {
+            0% {transform: translateY(0);}
+            50% {transform: translateY(0.5em);}
+            100% {transform: translateY(0);}
         }
     }
 }

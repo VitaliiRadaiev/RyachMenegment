@@ -45,7 +45,7 @@ class App {
 	}
 
 	slidersInit() {
-
+		@@include('../common/gallery/gallery.js');
 	}
 
 	smoothScroll() {
@@ -162,7 +162,7 @@ class App {
 	}
 
 	componentsScripts() {
-
+		@@include('../common/text-block/text-block.js');
 	}
 
 }

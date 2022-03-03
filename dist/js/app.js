@@ -323,7 +323,43 @@ if(mobileMenu && burger && mobileMenuCloseBtn) {
 	}
 
 	slidersInit() {
+		{
+	const slider = document.querySelector('[data-slider="gallery-mob-slider"]');
+	if(slider) {
+		let mySwiper;
 
+		function mobileSlider() {
+			if(document.documentElement.clientWidth <= 767 && slider.dataset.mobile == 'false') {
+				mySwiper = new Swiper(slider, {
+					slidesPerView: 1,
+					speed: 600,
+                    spaceBetween: 24,
+					pagination: {
+					    el: slider.querySelector('.swiper-pagination'),
+					    clickable: true,
+					},
+				});
+
+				slider.dataset.mobile = 'true';
+			}
+
+			if(document.documentElement.clientWidth > 767) {
+				slider.dataset.mobile = 'false';
+
+				if(slider.classList.contains('swiper-initialized')) {
+					mySwiper.destroy();
+				}
+			}
+		}
+
+		mobileSlider();
+
+		window.addEventListener('resize', () => {
+			mobileSlider();
+		})
+	}
+
+};
 	}
 
 	smoothScroll() {
@@ -506,7 +542,20 @@ if (videoBlock.length) {
 	}
 
 	componentsScripts() {
-
+		{
+    let textScrollBtnAll = document.querySelectorAll('[data-action="scroll-to-next-block"]');
+    if(textScrollBtnAll.length) {
+        textScrollBtnAll.forEach(textScrollBtn => {
+            textScrollBtn.addEventListener('click', () => {
+                let parent = textScrollBtn.closest('.text-block');
+                window.scrollTo({
+                    top: parent.nextElementSibling.offsetTop - 40,
+                    behavior: "smooth"
+                })
+            })
+        })
+    }
+};
 	}
 
 }

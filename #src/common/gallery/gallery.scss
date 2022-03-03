@@ -1,0 +1,42 @@
+.gallery {
+    padding: 4rem 0;
+
+    & .swiper {
+        @media (max-width: $md3+px) {
+            padding-bottom: 48px;
+        }
+    }
+
+    & .swiper-wrapper {
+        @media (min-width: 768px) {
+            width: auto;
+            flex-wrap: wrap;
+            margin: 0 -1.2rem -2.4rem;
+        }
+    }
+
+    & .swiper-slide {
+        @media (min-width: 768px) {
+            flex: 0 1 50%;
+            padding: 0 1.2rem;
+            margin-bottom: 2.4rem;
+        }
+    }   
+
+    &__img {
+        height: 0;
+        padding-bottom: 59.42%;
+    }
+
+    & .swiper-pagination {
+        bottom: 0;
+
+        & .swiper-pagination-bullet {
+            margin: 0 2px !important;
+        }
+
+        & .swiper-pagination-bullet-active {
+            background-color: #000;
+        }
+    }
+}

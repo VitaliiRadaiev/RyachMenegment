@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body style="background-image: url(img/photo/home-bg.jpg);">
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    @@include('common/header/_header.html',{})
+    <!-- == // TOP LINE ================== -->
+
+
+    <main class="_page home-page">
+        @@include('common/hero/_hero.html',{
+        "url": "img/photo/hero-bg-2.jpg",
+        "isSuptitle": true,
+        "suptitle": "YACHT AGENT & CREW",
+        "title": "The other side of the wind is us",
+        "text": false
+        })
+
+
+        @@include('common/text-block/_text-block.html', {
+        "title": "Yacht Agent & Crew",
+        "text": "RYacht Services is our yacht concierge and yacht agency department providing yacht assistance in Monaco, France, Italy and in Albania."
+        })
+
+        <section class="services-section padding-wrap bg-secondary">
+            <div class="container">
+                <h2 class="services-section__title text-center">
+                    Our services
+                </h2>
+                <ul class="services-section__list">
+                    <li>
+                        <div class="services-section__list-title">
+                            <div class="services-section__list-icon">
+                                <img src="img/icons/01.svg" alt="">
+                            </div>
+                            <span>Dockage arrangement Summer & Winter</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="services-section__list-title">
+                            <div class="services-section__list-icon">
+                                <img src="img/icons/02.svg" alt="">
+                            </div>
+                            <span>Crew visa’s</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="services-section__list-title">
+                            <div class="services-section__list-icon">
+                                <img src="img/icons/03.svg" alt="">
+                            </div>
+                            <span>Tax & Duty free Bunkering</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="services-section__list-title">
+                            <div class="services-section__list-icon">
+                                <img src="img/icons/04.svg" alt="">
+                            </div>
+                            <span>Provisioning services</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="services-section__list-title">
+                            <div class="services-section__list-icon">
+                                <img src="img/icons/05.svg" alt="">
+                            </div>
+                            <span>Private car transfers and car hire</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="services-section__list-title">
+                            <div class="services-section__list-icon">
+                                <img src="img/icons/06.svg" alt="">
+                            </div>
+                            <span>Hotel, Club and Restaurant reservations</span>
+                        </div>
+                    </li>
+                </ul>
+                <div class="services-section__bottom">
+                    <a href="#" class="btn btn--secondary btn--with-arrow">Contact us</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="text-block text-block--with-img padding-wrap">
+            <div class="container">
+                <div class="text-block__body">
+                    <div class="text-block__col-1">
+                        <div class="text-block__img ibg">
+                            <img src="img/photo/text-block-img-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-block__col-2">
+                        <h2 class="text-block__title">Crew Placement</h2>
+
+                        <div class="text-block__text text-content">
+                            <p>
+                                Our crew placement division is an MLC 2006 compliant agency operating with the sole aim of making sure that only the most capable of crew members look after you and your guests. We maintain a comprehensive database of qualified crew which we update daily. Working closely with Captains and Owners of both private and charter yachts, we screen every candidate personally and place the ideal crew members to match your requirements.
+                            </p>
+                            <p class="mb-0">Our services include:</p>
+                            <ul>
+                                <li>
+                                    Personally interviewing candidates
+                                </li>
+                                <li>
+                                    Checking a minimum of three references
+                                </li>
+                                <li>
+                                    Verifying skills, certificates, qualifications and other relevant documentation
+                                </li>
+                                <li>    
+                                    Advising Owners and Captains on salaries and manning requirements
+                                </li>
+                                <li>
+                                    A comprehensive crewing database, accessible by crew and agents from anywhere in the world
+                                </li>
+                                <li>
+                                    Operating in compliance with MLC 2006 legislation and standards
+                                </li>
+                            </ul>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include('common/gallery/_gallery.html', {
+            "images": ['img/photo/gallery-img-1.jpg', 'img/photo/gallery-img-2.jpg', 'img/photo/gallery-img-3.jpg', 'img/photo/gallery-img-4.jpg',]
+        })
+
+        @@include('common/cta/_cta.html', {
+        "title": "We are the bridge between the Superyacht and the Shore"
+        })
+
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>

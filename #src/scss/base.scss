@@ -450,13 +450,9 @@ video {
 	}
 
 	& ul {
-		padding-left: 1em;
+		padding-left: 1.2em;
 		& > li {
 			list-style: disc;
-
-			&:not(:last-child) {
-				margin-bottom: 0.7em;
-			}
 
 			& > *:last-child {
 				margin-bottom: 0;
@@ -467,9 +463,6 @@ video {
 	& ol {
 		padding-left: 1em;
 		& > li {
-			&:not(:last-child) {
-				margin-bottom: 0.7em;
-			}
 
 			& > *:last-child {
 				margin-bottom: 0;

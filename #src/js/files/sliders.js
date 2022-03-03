@@ -123,7 +123,7 @@ let sliderData = new Swiper('.about__slider', {
 					    	}
 					    	return '<span class="'+ className +'"> ' + num + '</span>';
 					    }
-					  },
+					},
 				});
 
 				slider.dataset.mobile = 'true';
@@ -134,7 +134,7 @@ let sliderData = new Swiper('.about__slider', {
 			if(document.documentElement.clientWidth > 767) {
 				slider.dataset.mobile = 'false';
 
-				if(slider.classList.contains('swiper-container-initialized')) {
+				if(slider.classList.contains('swiper-initialized')) {
 					mySwiper.destroy();
 				}
 			}

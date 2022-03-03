@@ -1,0 +1,16 @@
+<div class="gallery">
+    <div class="container-sm">
+        <div class="swiper" data-slider="gallery-mob-slider" data-mobile="false">
+            <div class="swiper-wrapper">
+                @@for (var i = 0; i < images.length; i++) {
+                    <div class="swiper-slide">
+                        <div class="gallery__img ibg">
+                            <img src="`+images[i]+`" alt="">
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
