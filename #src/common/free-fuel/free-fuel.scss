@@ -1,0 +1,67 @@
+.free-fuel {
+
+    &__title {
+        margin: 0 auto 4rem;
+        max-width: 25em;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    &__map {
+        margin: 0 auto 4rem;
+        max-width: 77.6rem;
+        width: 100%;
+
+        @media (max-width: $md3+px) {
+            margin-bottom: 2.4rem;
+        }
+
+        & img, & svg {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__marker {
+        transition: all .3s ease;
+
+        &.active {
+            fill: #FFC31C;
+        }
+    }
+
+    &__nav-wrap {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: $md3+px) {
+            margin-right: -12px;
+        }
+    }
+
+    &__nav {
+        overflow-x: auto;
+        overflow-y: hidden;
+        display: flex;
+    }
+
+    &__nav-item {
+        white-space: nowrap;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 1.33em;
+        letter-spacing: 0.0055em;
+        color: $textColorSecondary;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 6.5rem;
+
+            @media (max-width: $md3+px) {
+                margin-right: 24px;
+            }
+        }
+    }
+}

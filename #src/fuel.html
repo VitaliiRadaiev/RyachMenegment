@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    @@include('common/header/_header.html',{})
+    <!-- == // TOP LINE ================== -->
+
+
+    <main class="_page ">
+        @@include('common/hero/_hero.html',{
+        "url": "img/photo/hero-bg-5.jpg",
+        "isSuptitle": true,
+        "suptitle": "FUEL",
+        "title": "Tax Free Fuel Solutions For Every  Superyacht Journey",
+        "text": false
+        })
+
+
+        @@include('common/text-block/_text-block.html', {
+        "title": "Fuel",
+        "text": "RYS Yachts  is a company which offers yacht assistance 24/7 specialize on tax free bunker in Port of Saranda and Durres. Albania is our Pride ! <br> Company objective is to offer a high level of service due to our experience and knowledge all over the Med."
+        })
+
+        @@include('common/free-fuel/_free-fuel.html')
+
+        <section class="text-block padding-wrap bg-secondary">
+            <div class="container-sm">
+                <h4 class="text-block__title">We offer much more </h4>
+                <div class="text-block__text text-content mb-6">
+                    <p>
+                        With increase of our networking, we supply bunker in Monaco, Cote d’Azur and Italy.
+                        We are looking forward to the opportunity to serve you and meet all your future requirements.
+                    </p>
+                </div>
+        
+                <div class="text-center">
+                    <a href="#" class="btn btn--with-arrow btn--secondary">Contact us</a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>

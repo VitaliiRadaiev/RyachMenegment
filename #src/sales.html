@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('_head.html',{
+"title": "New Project"
+})
+
+<body>
+    <div class="_preload-body"></div>
+    <!-- == TOP LINE ================== -->
+    @@include('common/header/_header.html',{})
+    <!-- == // TOP LINE ================== -->
+
+
+    <main class="_page ">
+        @@include('common/hero/_hero.html',{
+        "url": "img/photo/hero-bg-4.jpg",
+        "isSuptitle": true,
+        "suptitle": "SALES",
+        "title": "You can’t sell happiness, But we can sell a superyacht and that’s pretty much the same thing.",
+        "text": false
+        })
+
+
+        @@include('common/text-block/_text-block.html', {
+        "title": "Sales",
+        "text": "Our  solid experience  gained over years will offer a solution to any of the captain’s and owner’s needs. Whether you are interested in selling, buying or commissioning a new construction project, we are consistently on hand to support and guide you, offering our in-house knowledge to present you with the very best opportunities that the yachting market has to offer."
+        })
+
+        <section class="text-block text-block--with-img padding-wrap">
+            <div class="container-sm">
+                <div class="text-block__body">
+                    <div class="text-block__col-1">
+                        <div class="text-block__img ibg">
+                            <img src="img/photo/text-block-img-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-block__col-2">
+                        <h2 class="text-block__title">Vessel Sales and Purchases</h2>
+
+                        <div class="text-block__text text-content">
+                            <p>
+                                We offer advice to Clients both when they are <strong>selling their yacht</strong> or when they are <strong>acquiring a new yacht.</strong>
+                            </p>
+                            <p>
+                                This includes <strong>providing</strong> advice on all the needed <strong>requirements</strong> to effect proper transfer of ownership with the <strong>Maltese</strong> or Cayman islands Registry.
+                            </p>
+                            <p>
+                                We will assist you in drafting all <strong>necessary documents</strong> needed to transfer or purchase a yacht legally, acquire all documentation needed from the Authorities – both if you are the vendor or the purchaser – and we can also assist you in deducing whether the yacht you are about to purchase has any registered encumbrances.
+                            </p>
+                            <p>
+                                Our  solid experience  gained over years will offer a solution to any of the broker, captain and owner needs.
+                            </p>
+                            <ul>
+                                <li>
+                                    Purchase or sell your yacht
+                                </li>
+                                <li>
+                                    Pre purchase surveyor
+                                </li>
+                                <li>
+                                    Legal and contractual services
+                                </li>
+                                <li>
+                                    New construction
+                                </li>
+                                <li>
+                                    Refits
+                                </li>
+                            </ul>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-block text-block--with-img text-block--with-img-row-revers padding-wrap">
+            <div class="container-sm">
+                <div class="text-block__body">
+                    <div class="text-block__col-1">
+                        <div class="text-block__img ibg">
+                            <img src="img/photo/text-block-img-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="text-block__col-2">
+                        <h2 class="text-block__title">Yacht Administration & Insurance</h2>
+
+                        <div class="text-block__text text-content">
+                            <p class="mb-0">
+                                Administrative work with Flag / Shipping registries : 
+                            </p>
+                            <ul>
+                                <li>
+                                    Yacht registration
+                                </li>
+                                <li>
+                                    Name changes
+                                </li>
+                                <li>
+                                    Ownership changes
+                                </li>
+                                <li>
+                                    Ownership structure
+                                </li>
+                            </ul>
+                            <p>
+                                General support and assistance to captain, applying for cruising permits, booking agents and pilots, assistance with customs.
+                                Deal with all crew medical and vessel insurance claims 
+                                Liaisons with insurers and appointing surveyors if required
+                                Possibility to offer comparative quotations
+                            </p>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include('common/gallery/_gallery.html', {
+            "images": ['img/photo/gallery-img-5.jpg', 'img/photo/gallery-img-6.jpg', 'img/photo/gallery-img-7.jpg', 'img/photo/gallery-img-8.jpg',]
+        })
+
+        @@include('common/cta/_cta.html', {
+        "title": "We are looking forward to the opportunity to connect with you and meet all your future requirements."
+        })
+
+    </main>
+
+
+    <!-- == FOOTER ================== -->
+    @@include('common/footer/_footer.html',{})
+    <!-- == // FOOTER ================== -->
+
+    @@include('_js-bottom.html',{})
+</body>
+
+</html>

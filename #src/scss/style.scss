@@ -28,7 +28,6 @@
 @import "base";
 // ==== // BASE STYLES ===========================================================================================
 
-
 // ==== COMMON BLOCKS =====================================================
 @import "../common/header/header";
 @import "../common/footer/footer";
@@ -41,10 +40,14 @@
 @import "../common/text-block/text-block";
 @import "../common/gallery/gallery";
 @import "../common/partners/partners";
+@import "../common/free-fuel/free-fuel";
 // ==== // COMMON BLOCKS =====================================================
 
 // ==== PAGES =====================================================
 @import "pages/home";
 @import "pages/yacht-agent-crew";
 @import "pages/management";
+@import "pages/sales";
+@import "pages/fuel";
+@import "pages/contact";
 // ==== AND PAGES =====================================================

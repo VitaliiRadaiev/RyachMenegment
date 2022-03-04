@@ -164,6 +164,7 @@ class App {
 
 	componentsScripts() {
 		@@include('../common/text-block/text-block.js');
+		@@include('../common/free-fuel/free-fuel.js');
 	}
 
 }
