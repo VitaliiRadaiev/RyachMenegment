@@ -2251,7 +2251,8 @@ video {
   letter-spacing: 0.014em;
 }
 
-.nav-footer {
+.nav-footer ul {
+  padding-left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2261,6 +2262,11 @@ video {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 0;
+}
+
+.nav-footer li:not(:last-child) {
+  margin-right: 4rem;
 }
 
 .nav-footer__link {
@@ -2271,10 +2277,6 @@ video {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-.nav-footer__link:not(:last-child) {
-  margin-right: 4rem;
 }
 
 .address-footer__item {
@@ -3131,7 +3133,8 @@ video {
 
 .list-offices__map {
   width: 100%;
-  height: 29.6rem;
+  height: 0;
+  padding-bottom: 100%;
   background-color: #FAFAFA;
 }
 

@@ -240,7 +240,9 @@ defer
                                 <a href="mailto:service@ryachtmanagement.com">service@ryachtmanagement.com</a>
                             </li>
                         </ul>
-                        <div class="list-offices__map" data-map-id="0"></div>
+                        <div class="list-offices__map ibg">
+                            <img src="img/photo/Monaco.png" alt="">
+                        </div>
                     </li>
                     <li>
                         <h4 class="list-offices__title">CANNES</h4>
@@ -258,7 +260,9 @@ defer
                                 <a href="mailto:service@ryachtmanagement.com">service@ryachtmanagement.com</a>
                             </li>
                         </ul>
-                        <div class="list-offices__map" data-map-id="1"></div>
+                        <div class="list-offices__map ibg">
+                            <img src="img/photo/Cannes.png" alt="">
+                        </div>
                     </li>
                     <li>
                         <h4 class="list-offices__title">GENOA</h4>
@@ -276,58 +280,13 @@ defer
                                 <a href="mailto:service@ryachtmanagement.com">service@ryachtmanagement.com</a>
                             </li>
                         </ul>
-                        <div class="list-offices__map" data-map-id="2"></div>
+                        <div class="list-offices__map ibg">
+                            <img src="img/photo/Genoa.png" alt="">
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
-
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Q82l2QjSzJJk1uUW3OzUBGPTlbk8w1g&callback=initMap&libraries=&v=weekly"
-            defer></script>
-        <script>
-            function initMap() {
-                var map = new google.maps.Map(document.querySelector('[data-map-id="0"]'), {
-                    center: { lat: 43.74765948697699, lng: 7.43320308338234 },
-                    zoom: 10,
-                    disableDefaultUI: true,
-                });
-                var marker = new google.maps.Marker({
-                    position: { lat: 43.74765948697699, lng: 7.43320308338234 },
-                    map: map,
-                    title: '',
-                    label: '',
-                    //icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNzJfMTQxMCkiPgo8cGF0aCBkPSJNOC4wMDA0MyAwQzQuNzEwNDYgMCAyLjAzMzk0IDIuNjc3NiAyLjAzMzk0IDUuOTY4ODZDMi4wMzM5NCAxMC44NzI2IDcuNDA2NTQgMTUuNjYwNyA3LjYzNTMzIDE1Ljg2MjJDNy43Mzk2MyAxNS45NTQxIDcuODcgMTYuMDAwMSA4LjAwMDQzIDE2LjAwMDFDOC4xMzA4NSAxNi4wMDAxIDguMjYxMjIgMTUuOTU0MSA4LjM2NTU3IDE1Ljg2MjJDOC41OTQyNiAxNS42NjA4IDEzLjk2NjkgMTAuODcyNyAxMy45NjY5IDUuOTY4ODZDMTMuOTY2OSAyLjY3NzYgMTEuMjkwNCAwIDguMDAwNDMgMFoiIGZpbGw9IiMxMjFBNUIiLz4KPHBhdGggZD0iTTguMDAxMTQgMy4zMzM1QzYuNTMwNzEgMy4zMzM1IDUuMzM0NDcgNC41Mjk3NiA1LjMzNDQ3IDYuMDAwMTZDNS4zMzQ0NyA3LjQ3MDYyIDYuNTMwNzEgOC42NjY4MyA4LjAwMTE0IDguNjY2ODNDOS40NzE1NyA4LjY2NjgzIDEwLjY2NzggNy40NzA2MiAxMC42Njc4IDYuMDAwMTZDMTAuNjY3OCA0LjUyOTc2IDkuNDcxNTcgMy4zMzM1IDguMDAxMTQgMy4zMzM1Wk04LjAwMTE0IDcuNjA3MTdDNy4xMTg4NyA3LjYwNzE3IDYuNDAxMTEgNi44ODYyOCA2LjQwMTExIDYuMDAwMTZDNi40MDExMSA1LjExNDEgNy4xMTg4NyA0LjM5MzE2IDguMDAxMTQgNC4zOTMxNkM4Ljg4MzQxIDQuMzkzMTYgOS42MDExNyA1LjExNDA1IDkuNjAxMTcgNi4wMDAxNkM5LjYwMTE3IDYuODg2MjggOC44ODM0MSA3LjYwNzE3IDguMDAxMTQgNy42MDcxN1oiIGZpbGw9IndoaXRlIi8+CjxlbGxpcHNlIGN4PSI3Ljk5OTQzIiBjeT0iNi4wMDAxNiIgcng9IjIuNjY2NjciIHJ5PSIyLjY2NjY3IiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzEyNzJfMTQxMCI+CjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K",
-                });
-
-                var map2 = new google.maps.Map(document.querySelector('[data-map-id="1"]'), {
-                    center: { lat: 43.55241191053971, lng: 7.01704076290344 },
-                    zoom: 10,
-                    disableDefaultUI: true,
-                });
-                var marker2 = new google.maps.Marker({
-                    position: { lat: 43.55241191053971, lng: 7.01704076290344 },
-                    map: map2,
-                    title: '',
-                    label: '',
-                    //icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNzJfMTQxMCkiPgo8cGF0aCBkPSJNOC4wMDA0MyAwQzQuNzEwNDYgMCAyLjAzMzk0IDIuNjc3NiAyLjAzMzk0IDUuOTY4ODZDMi4wMzM5NCAxMC44NzI2IDcuNDA2NTQgMTUuNjYwNyA3LjYzNTMzIDE1Ljg2MjJDNy43Mzk2MyAxNS45NTQxIDcuODcgMTYuMDAwMSA4LjAwMDQzIDE2LjAwMDFDOC4xMzA4NSAxNi4wMDAxIDguMjYxMjIgMTUuOTU0MSA4LjM2NTU3IDE1Ljg2MjJDOC41OTQyNiAxNS42NjA4IDEzLjk2NjkgMTAuODcyNyAxMy45NjY5IDUuOTY4ODZDMTMuOTY2OSAyLjY3NzYgMTEuMjkwNCAwIDguMDAwNDMgMFoiIGZpbGw9IiMxMjFBNUIiLz4KPHBhdGggZD0iTTguMDAxMTQgMy4zMzM1QzYuNTMwNzEgMy4zMzM1IDUuMzM0NDcgNC41Mjk3NiA1LjMzNDQ3IDYuMDAwMTZDNS4zMzQ0NyA3LjQ3MDYyIDYuNTMwNzEgOC42NjY4MyA4LjAwMTE0IDguNjY2ODNDOS40NzE1NyA4LjY2NjgzIDEwLjY2NzggNy40NzA2MiAxMC42Njc4IDYuMDAwMTZDMTAuNjY3OCA0LjUyOTc2IDkuNDcxNTcgMy4zMzM1IDguMDAxMTQgMy4zMzM1Wk04LjAwMTE0IDcuNjA3MTdDNy4xMTg4NyA3LjYwNzE3IDYuNDAxMTEgNi44ODYyOCA2LjQwMTExIDYuMDAwMTZDNi40MDExMSA1LjExNDEgNy4xMTg4NyA0LjM5MzE2IDguMDAxMTQgNC4zOTMxNkM4Ljg4MzQxIDQuMzkzMTYgOS42MDExNyA1LjExNDA1IDkuNjAxMTcgNi4wMDAxNkM5LjYwMTE3IDYuODg2MjggOC44ODM0MSA3LjYwNzE3IDguMDAxMTQgNy42MDcxN1oiIGZpbGw9IndoaXRlIi8+CjxlbGxpcHNlIGN4PSI3Ljk5OTQzIiBjeT0iNi4wMDAxNiIgcng9IjIuNjY2NjciIHJ5PSIyLjY2NjY3IiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzEyNzJfMTQxMCI+CjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K",
-                });
-
-                var map3 = new google.maps.Map(document.querySelector('[data-map-id="2"]'), {
-                    center: { lat: 44.42472581251698, lng: 8.949053296885035 },
-                    zoom: 10,
-                    disableDefaultUI: true,
-                });
-                var marker3 = new google.maps.Marker({
-                    position: { lat: 44.42472581251698, lng: 8.949053296885035 },
-                    map: map3,
-                    title: '',
-                    label: '',
-                    //icon: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzEyNzJfMTQxMCkiPgo8cGF0aCBkPSJNOC4wMDA0MyAwQzQuNzEwNDYgMCAyLjAzMzk0IDIuNjc3NiAyLjAzMzk0IDUuOTY4ODZDMi4wMzM5NCAxMC44NzI2IDcuNDA2NTQgMTUuNjYwNyA3LjYzNTMzIDE1Ljg2MjJDNy43Mzk2MyAxNS45NTQxIDcuODcgMTYuMDAwMSA4LjAwMDQzIDE2LjAwMDFDOC4xMzA4NSAxNi4wMDAxIDguMjYxMjIgMTUuOTU0MSA4LjM2NTU3IDE1Ljg2MjJDOC41OTQyNiAxNS42NjA4IDEzLjk2NjkgMTAuODcyNyAxMy45NjY5IDUuOTY4ODZDMTMuOTY2OSAyLjY3NzYgMTEuMjkwNCAwIDguMDAwNDMgMFoiIGZpbGw9IiMxMjFBNUIiLz4KPHBhdGggZD0iTTguMDAxMTQgMy4zMzM1QzYuNTMwNzEgMy4zMzM1IDUuMzM0NDcgNC41Mjk3NiA1LjMzNDQ3IDYuMDAwMTZDNS4zMzQ0NyA3LjQ3MDYyIDYuNTMwNzEgOC42NjY4MyA4LjAwMTE0IDguNjY2ODNDOS40NzE1NyA4LjY2NjgzIDEwLjY2NzggNy40NzA2MiAxMC42Njc4IDYuMDAwMTZDMTAuNjY3OCA0LjUyOTc2IDkuNDcxNTcgMy4zMzM1IDguMDAxMTQgMy4zMzM1Wk04LjAwMTE0IDcuNjA3MTdDNy4xMTg4NyA3LjYwNzE3IDYuNDAxMTEgNi44ODYyOCA2LjQwMTExIDYuMDAwMTZDNi40MDExMSA1LjExNDEgNy4xMTg4NyA0LjM5MzE2IDguMDAxMTQgNC4zOTMxNkM4Ljg4MzQxIDQuMzkzMTYgOS42MDExNyA1LjExNDA1IDkuNjAxMTcgNi4wMDAxNkM5LjYwMTE3IDYuODg2MjggOC44ODM0MSA3LjYwNzE3IDguMDAxMTQgNy42MDcxN1oiIGZpbGw9IndoaXRlIi8+CjxlbGxpcHNlIGN4PSI3Ljk5OTQzIiBjeT0iNi4wMDAxNiIgcng9IjIuNjY2NjciIHJ5PSIyLjY2NjY3IiBmaWxsPSJ3aGl0ZSIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwXzEyNzJfMTQxMCI+CjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0id2hpdGUiLz4KPC9jbGlwUGF0aD4KPC9kZWZzPgo8L3N2Zz4K",
-                });
-
-            }
-        </script>
 
         <form class="form padding-wrap">
             <div class="container-sm">
